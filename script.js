@@ -68,6 +68,7 @@
   function initHamburger() {
     var btn = document.getElementById('hamburger-btn');
     var navLinks = document.getElementById('nav-links');
+    var navbar = document.getElementById('navbar');
     if (!btn || !navLinks) return;
 
     btn.addEventListener('click', function () {
@@ -87,7 +88,7 @@
 
     // Fecha ao clicar fora
     document.addEventListener('click', function (e) {
-      if (!navbar.contains(e.target)) {
+      if (navbar && !navbar.contains(e.target)) {
         navLinks.classList.remove('open');
         btn.classList.remove('open');
         btn.setAttribute('aria-expanded', 'false');
