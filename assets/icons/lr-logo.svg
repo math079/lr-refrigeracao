@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 80" fill="none">
+  <defs>
+    <linearGradient id="logoEmblemGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0066FF"/>
+      <stop offset="60%" stop-color="#0047BA"/>
+      <stop offset="100%" stop-color="#00297A"/>
+    </linearGradient>
+    <linearGradient id="frostGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#70E0FF"/>
+      <stop offset="100%" stop-color="#00B4D8"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Emblem Container -->
+  <g transform="translate(4, 8)">
+    <rect width="64" height="64" rx="16" fill="url(#logoEmblemGrad)"/>
+    <rect x="1" y="1" width="62" height="62" rx="15" stroke="rgba(255,255,255,0.25)" stroke-width="1.5"/>
+    
+    <!-- Snowflake Crystal Detail -->
+    <g transform="translate(32, 24) scale(0.62)" stroke="url(#frostGrad)" stroke-width="3" stroke-linecap="round">
+      <line x1="0" y1="-18" x2="0" y2="18"/>
+      <line x1="-15.5" y1="-9" x2="15.5" y2="9"/>
+      <line x1="-15.5" y1="9" x2="15.5" y2="-9"/>
+      <path d="M-4,-13 L0,-17 L4,-13" fill="none"/>
+      <path d="M-4,13 L0,17 L4,13" fill="none"/>
+      <path d="M-13,-3 L-16,-8 L-11,-9" fill="none"/>
+      <path d="M13,3 L16,8 L11,9" fill="none"/>
+      <path d="M-13,3 L-16,8 L-11,9" fill="none"/>
+      <path d="M13,-3 L16,-8 L11,-9" fill="none"/>
+      <circle cx="0" cy="0" r="3.5" fill="#70E0FF"/>
+    </g>
+    
+    <!-- Monogram LR -->
+    <text x="32" y="53" font-family="'Inter', -apple-system, sans-serif" font-weight="900" font-size="22" fill="#FFFFFF" text-anchor="middle" letter-spacing="1">LR</text>
+  </g>
+
+  <!-- Brand Typography -->
+  <g transform="translate(82, 0)">
+    <!-- Primary Name -->
+    <text x="0" y="40" font-family="'Inter', -apple-system, sans-serif" font-weight="900" font-size="28" fill="currentColor" letter-spacing="-0.5">
+      LR <tspan fill="#0066FF">REFRIGERAÇÃO</tspan>
+    </text>
+    
+    <!-- Tagline Subtitle -->
+    <text x="1" y="58" font-family="'Inter', -apple-system, sans-serif" font-weight="700" font-size="9.5" fill="#64748B" letter-spacing="2">
+      COMERCIAL &amp; RESIDENCIAL
+    </text>
+  </g>
+</svg>

@@ -11,19 +11,19 @@
 
   const WA_MESSAGES = {
     'geladeira':
-      'Ola, tenho interesse em seu servico. Pode me ajudar a consertar minha geladeira? Ela esta apresentando problemas e preciso de assistencia.',
+      'Olá, preciso de assistência para consertar minha geladeira residencial. Ela está apresentando problemas, pode me passar um orçamento?',
     'freezer':
-      'Ola, tenho interesse em seu servico. Preciso de assistencia para meu freezer comercial. Pode me passar um orcamento?',
+      'Olá, preciso de assistência técnica urgente para meu freezer comercial. Pode me passar um orçamento?',
     'expositora':
-      'Ola, tenho interesse em seu servico. Preciso de manutencao em minha expositora de bebidas. Voces atendem esse tipo de equipamento?',
+      'Olá, preciso de conserto/manutenção na minha expositora de bebidas. Vocês atendem esse modelo?',
     'ar-condicionado':
-      'Ola, tenho interesse em seu servico. Meu ar condicionado esta com problema e preciso de assistencia. Pode me ajudar?',
+      'Olá, preciso de conserto para meu ar-condicionado. Ele está apresentando defeito e gostaria de agendar uma visita técnica.',
     'camara-fria':
-      'Ola, tenho interesse em seu servico. Preciso de assistencia tecnica em minha camara fria. E urgente, pode me atender?',
+      'Olá, preciso de assistência técnica especializada em câmara fria. É urgente, conseguem me atender?',
     'preventiva':
-      'Ola, tenho interesse em seu servico. Gostaria de contratar um plano de manutencao preventiva para meus equipamentos. Podem me passar mais informacoes?',
+      'Olá, tenho interesse em contratar um plano de manutenção preventiva para os equipamentos da minha empresa.',
     'default':
-      'Ola, tenho interesse em seu servico. Pode me ajudar com um orcamento para refrigeracao?'
+      'Olá, gostaria de um orçamento para serviço de refrigeração. Pode me ajudar?'
   };
 
   function buildWALink(key) {
