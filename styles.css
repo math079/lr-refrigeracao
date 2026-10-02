@@ -836,11 +836,57 @@ ul {
 .parceiro-coca {
   background: var(--slate-900);
   border-radius: var(--radius-xl);
-  padding: 40px 36px;
-  max-width: 640px;
+  padding: 40px 32px;
+  max-width: 960px;
   margin: 0 auto 52px;
   position: relative;
   overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .parceiro-coca-inner {
+    display: grid;
+    grid-template-columns: 1.15fr 0.85fr;
+    gap: 40px;
+    align-items: center;
+  }
+}
+
+.coca-photo-wrapper {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  margin-top: 24px;
+}
+
+@media (min-width: 768px) {
+  .coca-photo-wrapper {
+    margin-top: 0;
+  }
+}
+
+.coca-photo-img {
+  width: 100%;
+  height: auto;
+  max-height: 480px;
+  object-fit: contain;
+  background: #0B1120;
+  display: block;
+}
+
+.coca-photo-caption {
+  background: rgba(15, 23, 42, 0.95);
+  padding: 10px 14px;
+  font-size: 0.8rem;
+  color: #E2E8F0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .parceiro-coca::before {
