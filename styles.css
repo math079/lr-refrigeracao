@@ -249,6 +249,16 @@ ul {
   height: 40px;
 }
 
+.brand-logo-img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
 .brand-text {
   display: flex;
   flex-direction: column;
@@ -813,7 +823,7 @@ ul {
 .brands-track {
   display: flex;
   align-items: center;
-  animation: brandScroll 28s linear infinite;
+  animation: brandScroll 60s linear infinite;
   width: max-content;
 }
 
