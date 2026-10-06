@@ -828,13 +828,14 @@ ul {
 .brands-track {
   display: flex;
   align-items: center;
-  animation: brandScroll 160s linear infinite;
+  animation: brandScroll 280s linear infinite !important;
   width: max-content;
   will-change: transform;
 }
 
+/* NÃO para ao passar o mouse - movimento contínuo em câmera lenta */
 .brands-track:hover {
-  animation-play-state: paused;
+  animation-play-state: running !important;
 }
 
 @keyframes brandScroll {
@@ -848,14 +849,9 @@ ul {
   justify-content: center;
   padding: 6px 42px;
   opacity: 0.9;
-  transition: opacity 0.3s ease, transform 0.3s ease;
   flex-shrink: 0;
   cursor: default;
-}
-
-.brand-item:hover {
-  opacity: 1;
-  transform: scale(1.04);
+  pointer-events: none; /* Desativa qualquer interferência do mouse */
 }
 
 .brand-svg {
