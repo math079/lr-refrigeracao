@@ -778,28 +778,31 @@ ul {
   margin-top: 4px;
 }
 
-/* ---- BRANDS CAROUSEL ---- */
+/* ---- BRANDS (ESTILO ELETRONTECH) ---- */
 .brands-section {
   background: var(--white);
   border-top: 1px solid var(--slate-200);
   border-bottom: 1px solid var(--slate-200);
-  padding: 32px 0;
+  padding: 28px 0 24px;
   overflow: hidden;
+  position: relative;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.03);
 }
 
 .brands-title {
   text-align: center;
-  font-size: 0.72rem;
-  font-weight: 700;
-  letter-spacing: 0.12em;
+  font-size: 0.82rem;
+  font-weight: 800;
+  letter-spacing: 0.16em;
   text-transform: uppercase;
-  color: var(--slate-600);
-  margin-bottom: 24px;
+  color: var(--slate-800);
+  margin-bottom: 26px;
 }
 
 .brands-track-wrapper {
   position: relative;
   overflow: hidden;
+  width: 100%;
 }
 
 .brands-fade-left,
@@ -807,26 +810,27 @@ ul {
   position: absolute;
   top: 0;
   bottom: 0;
-  width: 80px;
+  width: 140px;
   z-index: 2;
   pointer-events: none;
 }
 
 .brands-fade-left {
   left: 0;
-  background: linear-gradient(to right, var(--white), transparent);
+  background: linear-gradient(to right, #ffffff 20%, rgba(255,255,255,0));
 }
 
 .brands-fade-right {
   right: 0;
-  background: linear-gradient(to left, var(--white), transparent);
+  background: linear-gradient(to left, #ffffff 20%, rgba(255,255,255,0));
 }
 
 .brands-track {
   display: flex;
   align-items: center;
-  animation: brandScroll 90s linear infinite;
+  animation: brandScroll 160s linear infinite;
   width: max-content;
+  will-change: transform;
 }
 
 .brands-track:hover {
@@ -842,17 +846,22 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 8px 36px;
-  opacity: 0.75;
-  transition: opacity 0.2s ease;
+  padding: 6px 42px;
+  opacity: 0.9;
+  transition: opacity 0.3s ease, transform 0.3s ease;
   flex-shrink: 0;
+  cursor: default;
 }
 
-.brand-item:hover { opacity: 1; }
+.brand-item:hover {
+  opacity: 1;
+  transform: scale(1.04);
+}
 
 .brand-svg {
   height: 32px;
   width: auto;
+  overflow: visible;
 }
 
 /* ---- SERVICES ---- */
